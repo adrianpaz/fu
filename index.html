@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finansowy Umysł</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header img {
+            max-width: 50%; /* Zmniejszenie obrazu o 50% na dużych ekranach */
+            height: auto;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background: url('banner-main.webp') center/cover no-repeat;
+            color: #fff;
+            text-align: center;
+            padding: 50px 20px;
+            width: 100%;
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .article {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .article img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+            border-radius: 10px;
+        }
+
+        .article h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .article p {
+            font-size: 1em;
+        }
+
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        /* Responsywne dopasowanie */
+        @media (max-width: 768px) {
+            header img {
+                max-width: 100%; /* Pełny rozmiar obrazu na telefonach */
+            }
+            .hero h1 {
+                font-size: 2em;
+            }
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav a {
+                margin: 5px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero {
+                padding: 30px 10px;
+            }
+            .hero h1 {
+                font-size: 1.8em;
+            }
+            .article h2 {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="FU.png" alt="Finansowy Umysł">
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">News</a>
+        <a href="#">Features</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="hero">
+        <h1>Latest Updates</h1>
+        <p>Stay informed with our latest news and features</p>
+    </div>
+
+    <div class="content">
+        <div class="article">
+            <img src="article_image_1_600x600.png" alt="Article Image">
+            <h2>Article Title 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+        <div class="article">
+            <img src="article_image_2_600x600.png" alt="Article Image">
+            <h2>Article Title 2</h2>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+        <div class="article">
+            <img src="article_image_3_600x600.png" alt="Article Image">
+            <h2>Article Title 3</h2>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
+
+        <div class="article">
+            <img src="article_image_4_600x600.png" alt="Article Image">
+            <h2>Article Title 4</h2>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Finansowy Umysł. All rights reserved.</p>
+    </footer>
+</body>
+</html>
